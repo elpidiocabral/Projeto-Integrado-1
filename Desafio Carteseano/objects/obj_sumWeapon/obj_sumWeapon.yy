@@ -10,8 +10,8 @@
     "path": "folders/Objects/Weapons.yy",
   },
   "parentObjectId": {
-    "name": "obj_player",
-    "path": "objects/obj_player/obj_player.yy",
+    "name": "obj_Weapon",
+    "path": "objects/obj_Weapon/obj_Weapon.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
