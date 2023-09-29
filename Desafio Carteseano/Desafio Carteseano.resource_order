@@ -11,6 +11,14 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Weapons","order":3,"path":"folders/Objects/Weapons.yy",},
+    {"name":"Entitys","order":4,"path":"folders/Objects/Entitys.yy",},
+    {"name":"GUI","order":5,"path":"folders/Objects/GUI.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"obj_subWeapon","order":2,"path":"objects/obj_subWeapon/obj_subWeapon.yy",},
+    {"name":"obj_multWeapon","order":1,"path":"objects/obj_multWeapon/obj_multWeapon.yy",},
+    {"name":"obj_sumWeapon","order":3,"path":"objects/obj_sumWeapon/obj_sumWeapon.yy",},
+    {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
+  ],
 }
