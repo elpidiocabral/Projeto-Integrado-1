@@ -51,7 +51,7 @@
     {"id":{"name":"planoCarteseano","path":"tilesets/planoCarteseano/planoCarteseano.yy",},},
     {"id":{"name":"obj_divWeapon","path":"objects/obj_divWeapon/obj_divWeapon.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
-    {"id":{"name":"spr_playerInitJump","path":"sprites/spr_playerInitJump/spr_playerInitJump.yy",},},
+    {"id":{"name":"spr_playerJump","path":"sprites/spr_playerJump/spr_playerJump.yy",},},
     {"id":{"name":"obj_points","path":"objects/obj_points/obj_points.yy",},},
     {"id":{"name":"obj_Weapon","path":"objects/obj_Weapon/obj_Weapon.yy",},},
     {"id":{"name":"fnt_monocraft","path":"fonts/fnt_monocraft/fnt_monocraft.yy",},},

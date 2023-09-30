@@ -27,7 +27,7 @@
     {"name":"obj_initialBar","order":1,"path":"objects/obj_initialBar/obj_initialBar.yy",},
     {"name":"spr_playerRun","order":2,"path":"sprites/spr_playerRun/spr_playerRun.yy",},
     {"name":"obj_subWeapon","order":2,"path":"objects/obj_subWeapon/obj_subWeapon.yy",},
-    {"name":"spr_playerInitJump","order":1,"path":"sprites/spr_playerInitJump/spr_playerInitJump.yy",},
+    {"name":"spr_playerJump","order":1,"path":"sprites/spr_playerJump/spr_playerJump.yy",},
     {"name":"obj_Weapon","order":4,"path":"objects/obj_Weapon/obj_Weapon.yy",},
     {"name":"spr_backgroundTiles","order":1,"path":"sprites/spr_backgroundTiles/spr_backgroundTiles.yy",},
     {"name":"obj_multWeapon","order":1,"path":"objects/obj_multWeapon/obj_multWeapon.yy",},
