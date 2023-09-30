@@ -27,9 +27,8 @@
 
     |Tecnologias|Documentação|
     |-|-|
-    |[Java](https://www.java.com/pt-BR/)|[DOC](https://docs.oracle.com/en/java/), [JRE](https://www.java.com/pt-BR/download/manual.jsp), [JDK](https://www.oracle.com/br/java/technologies/downloads/)|
     |[PostGreSQL](https://www.postgresql.org/)|[DOC](https://www.postgresql.org/docs/), [DOWNLOAD](https://www.postgresql.org/download/)|
-    |[JMonkeyEngine](https://jmonkeyengine.org/)|[DOC](https://jmonkeyengine.org/docs/), [LIB](https://library.jmonkeyengine.org/)|
+    |[Game Maker](https://gamemaker.io/pt-BR)|[DOC](https://manual-br.yoyogames.com/#t=Content.htm)|
 
     #
 
