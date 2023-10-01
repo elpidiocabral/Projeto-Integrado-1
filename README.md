@@ -1,4 +1,4 @@
-# 🕹️ Nome do jogo 🕹️
+# 🕹️ Desafio Carteseano 🕹️
 ## 📗 1º Entrega:
 - [Documentação de Requisitos](https://github.com/elpidiocabral/Projeto-Integrado-1/blob/main/Documenta%C3%A7%C3%A3o/Doc%20Requisitos.pdf)
 
