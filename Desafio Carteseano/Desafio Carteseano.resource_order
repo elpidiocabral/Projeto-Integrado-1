@@ -20,6 +20,8 @@
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
     {"name":"Enemy","order":4,"path":"folders/Sprites/Entity/Enemy.yy",},
+    {"name":"parallax","order":4,"path":"folders/Sprites/Map/parallax.yy",},
+    {"name":"space_opc1","order":1,"path":"folders/Sprites/Map/parallax/space_opc1.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_textbox","order":1,"path":"sprites/spr_textbox/spr_textbox.yy",},
