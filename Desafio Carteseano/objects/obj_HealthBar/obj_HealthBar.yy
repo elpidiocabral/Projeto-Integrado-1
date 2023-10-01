@@ -1,9 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_health",
-  "eventList": [],
-  "managed": true,
+  "name": "obj_HealthBar",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
+  "managed": false,
   "overriddenProperties": [],
   "parent": {
     "name": "GUI",
@@ -24,8 +27,11 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": false,
-  "spriteId": null,
+  "solid": true,
+  "spriteId": {
+    "name": "spr_FullHealtBar",
+    "path": "sprites/spr_FullHealtBar/spr_FullHealtBar.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
