@@ -24,7 +24,7 @@
     {"name":"spr_textbox","order":1,"path":"sprites/spr_textbox/spr_textbox.yy",},
     {"name":"obj_entidade","order":3,"path":"objects/obj_entidade/obj_entidade.yy",},
     {"name":"spr_playerSumAttack","order":3,"path":"sprites/spr_playerSumAttack/spr_playerSumAttack.yy",},
-    {"name":"obj_health","order":1,"path":"objects/obj_health/obj_health.yy",},
+    {"name":"obj_HealthBar","order":1,"path":"objects/obj_HealthBar/obj_HealthBar.yy",},
     {"name":"spr_mapBackground","order":3,"path":"sprites/spr_mapBackground/spr_mapBackground.yy",},
     {"name":"obj_initialBar","order":1,"path":"objects/obj_initialBar/obj_initialBar.yy",},
     {"name":"spr_playerRun","order":2,"path":"sprites/spr_playerRun/spr_playerRun.yy",},

@@ -14,12 +14,12 @@ var effect_blur = layer_get_fx("zoomBlur")
 fx_set_parameter(effect_blur, "g_ZoomBlurCenter", [x/4096, y/768])
 
 
-var _dwidth = display_get_width();
-var _dheight = display_get_height();
-var _xpos = (_dwidth / 2) - 480;
-var _ypos = (_dheight / 2) - 400;
-window_set_rectangle(_xpos, _ypos, 1024, 760);
-view_camera[0] = camera_create_view(x - 150, 0, 1366, 768, 0, obj_player, 8, 1, 200, 100)
+//var _dwidth = display_get_width();
+//var _dheight = display_get_height();
+//var _xpos = (_dwidth / 2) - 480;
+//var _ypos = (_dheight / 2) - 400;
+//window_set_rectangle(_xpos, _ypos, 1024, 760);
+view_camera[0] = camera_create_view(x - 300, 0, 1366, 768, 0, obj_player, 4, 1, 0, 100)
 
 
 
@@ -85,6 +85,7 @@ switch (estado){
 		
 		if (image_index >= image_number - 1)
 			estado = "parado"
+		
 			
 		break;
 }

@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "obj_sumWeapon",
   "eventList": [],
-  "managed": true,
+  "managed": false,
   "overriddenProperties": [],
   "parent": {
     "name": "Weapons",

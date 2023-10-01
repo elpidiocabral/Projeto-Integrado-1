@@ -1,3 +1,5 @@
-draw_sprite(spr_textbox, 0, x, y)
+draw_sprite_stretched(spr_textbox, 0, x - string_width(text), y - stringHeight, string_width(text) * 2, stringHeight* 2)
 draw_set_font(fnt_monocraft)
-draw_text_ext(x,y, text, stringHeight, boxWidth)
+draw_set_valign(fa_middle)
+draw_set_halign(fa_center)
+draw_text_ext_color(x,y, text, stringHeight, boxWidth - 0.2*boxWidth, c_black, c_black, c_black, c_black, 255)
