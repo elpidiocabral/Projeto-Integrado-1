@@ -1,6 +1,15 @@
-spd = 6
-vspd = 0
-hspd = 0
-grv = 0.4
-flag_fall = 0;
-orig_xscale = image_xscale
+event_inherited();
+
+vida_max = 4;
+vida_atual = vida_max;
+
+mostra_estado = true;
+
+massa = 1.5;
+
+view_enabled = true
+view_visible[0] = true;
+
+
+max_velh = 8;
+max_velv = 6;
