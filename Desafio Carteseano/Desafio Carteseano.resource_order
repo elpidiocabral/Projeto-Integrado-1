@@ -13,6 +13,7 @@
     {"name":"Sequences","order":8,"path":"folders/Sequences.yy",},
     {"name":"Sounds","order":2,"path":"folders/Sounds.yy",},
     {"name":"Box","order":4,"path":"folders/Sprites/Box.yy",},
+    {"name":"Enemy","order":5,"path":"folders/Sprites/Entity/Enemy.yy",},
     {"name":"Player","order":3,"path":"folders/Sprites/Entity/Player.yy",},
     {"name":"GUI","order":1,"path":"folders/Sprites/GUI.yy",},
     {"name":"Map","order":3,"path":"folders/Sprites/Map.yy",},
