@@ -57,9 +57,6 @@
     {"id":{"name":"obj_musica","path":"objects/obj_musica/obj_musica.yy",},},
     {"id":{"name":"spr_playerSubAttack","path":"sprites/spr_playerSubAttack/spr_playerSubAttack.yy",},},
     {"id":{"name":"bg_space_opc1","path":"sprites/bg_space_opc1/bg_space_opc1.yy",},},
-<<<<<<< HEAD
-=======
->>>>>>> Elementos-Finais-de-Design
     {"id":{"name":"spr_playerRun","path":"sprites/spr_playerRun/spr_playerRun.yy",},},
     {"id":{"name":"snd_punch","path":"sounds/snd_punch/snd_punch.yy",},},
     {"id":{"name":"obj_subWeapon","path":"objects/obj_subWeapon/obj_subWeapon.yy",},},
@@ -82,11 +79,6 @@
     {"id":{"name":"obj_sumWeapon","path":"objects/obj_sumWeapon/obj_sumWeapon.yy",},},
     {"id":{"name":"spr_minus_equipment","path":"sprites/spr_minus_equipment/spr_minus_equipment.yy",},},
     {"id":{"name":"spr_health_bar","path":"sprites/spr_health_bar/spr_health_bar.yy",},},
-<<<<<<< HEAD
-    {"id":{"name":"enemy_dmg","path":"sprites/enemy_dmg/enemy_dmg.yy",},},
-    {"id":{"name":"spr_qButton","path":"sprites/spr_qButton/spr_qButton.yy",},},
-=======
->>>>>>> Elementos-Finais-de-Design
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
