@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_points",
+  "name": "obj_musica",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
-  "managed": false,
+  "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "GUI",
-    "path": "folders/Objects/GUI.yy",
+    "name": "Map",
+    "path": "folders/Objects/Map.yy",
   },
   "parentObjectId": null,
-  "persistent": true,
+  "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -27,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_score_counter",
-    "path": "sprites/spr_score_counter/spr_score_counter.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
