@@ -69,6 +69,7 @@
     {"id":{"name":"obj_Weapon","path":"objects/obj_Weapon/obj_Weapon.yy",},},
     {"id":{"name":"fnt_monocraft","path":"fonts/fnt_monocraft/fnt_monocraft.yy",},},
     {"id":{"name":"snd_music1","path":"sounds/snd_music1/snd_music1.yy",},},
+    {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_Black","path":"sprites/spr_Black/spr_Black.yy",},},
     {"id":{"name":"obj_solidTransparent","path":"objects/obj_solidTransparent/obj_solidTransparent.yy",},},
     {"id":{"name":"spr_plus_equipment","path":"sprites/spr_plus_equipment/spr_plus_equipment.yy",},},
