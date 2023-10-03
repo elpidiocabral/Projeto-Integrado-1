@@ -1,1 +1,0 @@
-x = obj_player.x - 100 + obj_sumWeapon.sprite_width / 2
