@@ -29,8 +29,8 @@
   "properties": [],
   "solid": true,
   "spriteId": {
-    "name": "spr_health_bar",
-    "path": "sprites/spr_health_bar/spr_health_bar.yy",
+    "name": "spr_FullHealtBar",
+    "path": "sprites/spr_FullHealtBar/spr_FullHealtBar.yy",
   },
   "spriteMaskId": null,
   "visible": true,

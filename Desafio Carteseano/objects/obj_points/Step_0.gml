@@ -1,1 +1,1 @@
-x = obj_player.x + 650
+x = obj_player.x + 850
