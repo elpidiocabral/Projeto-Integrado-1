@@ -23,6 +23,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scripts","folderPath":"folders/Scripts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sequences","folderPath":"folders/Sequences.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sounds","folderPath":"folders/Sounds.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"musics","folderPath":"folders/Sounds/musics.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"special_effects","folderPath":"folders/Sounds/special_effects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Box","folderPath":"folders/Sprites/Box.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Entity","folderPath":"folders/Sprites/Entity.yy",},
@@ -35,8 +37,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Weapons","folderPath":"folders/Sprites/Weapons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"special_effects","folderPath":"folders/Sounds/special_effects.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"musics","folderPath":"folders/Sounds/musics.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -46,17 +46,20 @@
   },
   "resources": [
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},},
+    {"id":{"name":"obj_qButton","path":"objects/obj_qButton/obj_qButton.yy",},},
     {"id":{"name":"spr_solidTransparent","path":"sprites/spr_solidTransparent/spr_solidTransparent.yy",},},
+    {"id":{"name":"obj_wButton","path":"objects/obj_wButton/obj_wButton.yy",},},
     {"id":{"name":"obj_entidade","path":"objects/obj_entidade/obj_entidade.yy",},},
     {"id":{"name":"spr_playerSumAttack","path":"sprites/spr_playerSumAttack/spr_playerSumAttack.yy",},},
     {"id":{"name":"obj_HealthBar","path":"objects/obj_HealthBar/obj_HealthBar.yy",},},
     {"id":{"name":"spr_mapBackground","path":"sprites/spr_mapBackground/spr_mapBackground.yy",},},
-    {"id":{"name":"enemy_run","path":"sprites/enemy_run/enemy_run.yy",},},
     {"id":{"name":"spr_playerIdle","path":"sprites/spr_playerIdle/spr_playerIdle.yy",},},
     {"id":{"name":"obj_musica","path":"objects/obj_musica/obj_musica.yy",},},
-    {"id":{"name":"obj_initialBar","path":"objects/obj_initialBar/obj_initialBar.yy",},},
+    {"id":{"name":"spr_playerSubAttack","path":"sprites/spr_playerSubAttack/spr_playerSubAttack.yy",},},
     {"id":{"name":"bg_space_opc1","path":"sprites/bg_space_opc1/bg_space_opc1.yy",},},
-    {"id":{"name":"spr_FullHealtBar","path":"sprites/spr_FullHealtBar/spr_FullHealtBar.yy",},},
+<<<<<<< HEAD
+=======
+>>>>>>> Elementos-Finais-de-Design
     {"id":{"name":"spr_playerRun","path":"sprites/spr_playerRun/spr_playerRun.yy",},},
     {"id":{"name":"snd_punch","path":"sounds/snd_punch/snd_punch.yy",},},
     {"id":{"name":"obj_subWeapon","path":"objects/obj_subWeapon/obj_subWeapon.yy",},},
@@ -68,6 +71,7 @@
     {"id":{"name":"obj_points","path":"objects/obj_points/obj_points.yy",},},
     {"id":{"name":"obj_Weapon","path":"objects/obj_Weapon/obj_Weapon.yy",},},
     {"id":{"name":"fnt_monocraft","path":"fonts/fnt_monocraft/fnt_monocraft.yy",},},
+    {"id":{"name":"spr_wButton","path":"sprites/spr_wButton/spr_wButton.yy",},},
     {"id":{"name":"snd_music1","path":"sounds/snd_music1/snd_music1.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_Black","path":"sprites/spr_Black/spr_Black.yy",},},
@@ -78,7 +82,11 @@
     {"id":{"name":"obj_sumWeapon","path":"objects/obj_sumWeapon/obj_sumWeapon.yy",},},
     {"id":{"name":"spr_minus_equipment","path":"sprites/spr_minus_equipment/spr_minus_equipment.yy",},},
     {"id":{"name":"spr_health_bar","path":"sprites/spr_health_bar/spr_health_bar.yy",},},
+<<<<<<< HEAD
     {"id":{"name":"enemy_dmg","path":"sprites/enemy_dmg/enemy_dmg.yy",},},
+    {"id":{"name":"spr_qButton","path":"sprites/spr_qButton/spr_qButton.yy",},},
+=======
+>>>>>>> Elementos-Finais-de-Design
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
