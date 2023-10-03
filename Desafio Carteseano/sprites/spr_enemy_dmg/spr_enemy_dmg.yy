@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "enemy_dmg",
+  "name": "spr_enemy_dmg",
   "bbox_bottom": 39,
   "bbox_left": 11,
   "bbox_right": 31,
@@ -35,7 +35,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "enemy_dmg",
+    "name": "spr_enemy_dmg",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -57,10 +57,10 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"312b3457-fad6-4958-a288-847f37909521","path":"sprites/enemy_dmg/enemy_dmg.yy",},},},"Disabled":false,"id":"970031da-0998-4ece-9c04-926db775ac2f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"aeede040-29ad-418e-adc8-fc037916cea0","path":"sprites/enemy_dmg/enemy_dmg.yy",},},},"Disabled":false,"id":"3d9da4ad-2ea7-4457-9776-ca2fc10e2cbe","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"151129fc-5fbd-4daa-8706-262176bd173d","path":"sprites/enemy_dmg/enemy_dmg.yy",},},},"Disabled":false,"id":"170bcb65-b9f6-4673-b22c-aacd0e71389d","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ab84c226-90e3-458d-9cb5-8c23d60df954","path":"sprites/enemy_dmg/enemy_dmg.yy",},},},"Disabled":false,"id":"da2b63f9-481c-46b3-950c-49b0ebc3efac","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"312b3457-fad6-4958-a288-847f37909521","path":"sprites/spr_enemy_dmg/spr_enemy_dmg.yy",},},},"Disabled":false,"id":"970031da-0998-4ece-9c04-926db775ac2f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"aeede040-29ad-418e-adc8-fc037916cea0","path":"sprites/spr_enemy_dmg/spr_enemy_dmg.yy",},},},"Disabled":false,"id":"3d9da4ad-2ea7-4457-9776-ca2fc10e2cbe","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"151129fc-5fbd-4daa-8706-262176bd173d","path":"sprites/spr_enemy_dmg/spr_enemy_dmg.yy",},},},"Disabled":false,"id":"170bcb65-b9f6-4673-b22c-aacd0e71389d","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ab84c226-90e3-458d-9cb5-8c23d60df954","path":"sprites/spr_enemy_dmg/spr_enemy_dmg.yy",},},},"Disabled":false,"id":"da2b63f9-481c-46b3-950c-49b0ebc3efac","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
