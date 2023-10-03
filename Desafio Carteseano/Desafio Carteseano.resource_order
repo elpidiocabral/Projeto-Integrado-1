@@ -27,6 +27,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_textbox","order":1,"path":"sprites/spr_textbox/spr_textbox.yy",},
+    {"name":"spr_playerSubSlash","order":4,"path":"sprites/spr_playerSubSlash/spr_playerSubSlash.yy",},
     {"name":"obj_entidade","order":3,"path":"objects/obj_entidade/obj_entidade.yy",},
     {"name":"spr_playerSumAttack","order":3,"path":"sprites/spr_playerSumAttack/spr_playerSumAttack.yy",},
     {"name":"obj_HealthBar","order":1,"path":"objects/obj_HealthBar/obj_HealthBar.yy",},

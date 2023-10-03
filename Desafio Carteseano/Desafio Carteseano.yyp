@@ -46,6 +46,7 @@
   },
   "resources": [
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},},
+    {"id":{"name":"spr_playerSubSlash","path":"sprites/spr_playerSubSlash/spr_playerSubSlash.yy",},},
     {"id":{"name":"spr_solidTransparent","path":"sprites/spr_solidTransparent/spr_solidTransparent.yy",},},
     {"id":{"name":"obj_entidade","path":"objects/obj_entidade/obj_entidade.yy",},},
     {"id":{"name":"spr_playerSumAttack","path":"sprites/spr_playerSumAttack/spr_playerSumAttack.yy",},},
