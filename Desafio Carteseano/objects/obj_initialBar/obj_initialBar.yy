@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_initialBar",
+  "name": "obj_qButton",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],

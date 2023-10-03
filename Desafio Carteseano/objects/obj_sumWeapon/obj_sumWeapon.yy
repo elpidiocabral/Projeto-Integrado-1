@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_sumWeapon",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": false,
   "overriddenProperties": [],
   "parent": {
@@ -28,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": true,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_plus_equipment",
+    "path": "sprites/spr_plus_equipment/spr_plus_equipment.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

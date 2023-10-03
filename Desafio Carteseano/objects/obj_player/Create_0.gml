@@ -11,4 +11,4 @@ view_enabled = true
 view_visible[0] = true;
 
 max_velh = 8;
-max_velv = 6;
+max_velv = 8;
