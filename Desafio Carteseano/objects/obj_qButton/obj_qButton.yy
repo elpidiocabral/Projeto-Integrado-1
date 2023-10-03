@@ -25,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_qButton",
-    "path": "sprites/spr_qButton/spr_qButton.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
