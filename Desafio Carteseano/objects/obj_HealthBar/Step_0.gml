@@ -1,3 +1,2 @@
-image_index = 0
-
-x = obj_player.x - 180
+image_index = image_number - vidasAtuais
+x = obj_player.x - 150

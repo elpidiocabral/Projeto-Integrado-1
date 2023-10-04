@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_subWeapon",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -28,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": true,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_minus_equipment",
+    "path": "sprites/spr_minus_equipment/spr_minus_equipment.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
