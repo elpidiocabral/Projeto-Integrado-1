@@ -1,1 +1,1 @@
-x = obj_player.x - 50
+x = obj_player.x + 50

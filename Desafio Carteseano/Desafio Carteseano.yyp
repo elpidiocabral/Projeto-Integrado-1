@@ -56,6 +56,7 @@
     {"id":{"name":"spr_playerIdle","path":"sprites/spr_playerIdle/spr_playerIdle.yy",},},
     {"id":{"name":"obj_musica","path":"objects/obj_musica/obj_musica.yy",},},
     {"id":{"name":"spr_playerSubAttack","path":"sprites/spr_playerSubAttack/spr_playerSubAttack.yy",},},
+    {"id":{"name":"spr_qButton","path":"sprites/spr_qButton/spr_qButton.yy",},},
     {"id":{"name":"bg_space_opc1","path":"sprites/bg_space_opc1/bg_space_opc1.yy",},},
     {"id":{"name":"spr_playerRun","path":"sprites/spr_playerRun/spr_playerRun.yy",},},
     {"id":{"name":"snd_punch","path":"sounds/snd_punch/snd_punch.yy",},},
