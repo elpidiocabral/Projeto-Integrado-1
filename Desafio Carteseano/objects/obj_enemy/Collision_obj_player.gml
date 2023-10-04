@@ -1,5 +1,5 @@
 if (obj_player.estado == "Ataque de soma" && TipoEquacao == "soma"){
-	obj_points.pontuacao ++
+	obj_points.pontuacao ++;
 	instance_destroy(id);
 } else {
 	instance_destroy();
