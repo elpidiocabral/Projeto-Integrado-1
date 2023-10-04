@@ -13,3 +13,4 @@ if place_meeting(x+hspeed, y, obj_solidTransparent){
 	}
 
 	x = x+hspeed
+	
