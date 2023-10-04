@@ -36,6 +36,10 @@ if (!chao){
 
 
 switch (estado){
+	case "morto":
+		
+		
+		break;
 	case "parado":
 		
 		sprite_index = spr_playerIdle;

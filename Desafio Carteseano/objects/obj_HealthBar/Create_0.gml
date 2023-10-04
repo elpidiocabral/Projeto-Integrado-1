@@ -1,1 +1,1 @@
-image_index = 0
+vidasAtuais = 4

@@ -4,4 +4,5 @@ speed = 4
 hspeed = speed
 vspeed = 0
 
+TipoEquacao = "soma"
 

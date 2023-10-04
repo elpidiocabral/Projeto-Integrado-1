@@ -3,7 +3,6 @@
 
 
 hspeed = -speed
-show_debug_message(hspeed)
 
 if place_meeting(x+hspeed, y, obj_solidTransparent){
 		while(!place_meeting(x + sign(hspeed), y, obj_solidTransparent)){
