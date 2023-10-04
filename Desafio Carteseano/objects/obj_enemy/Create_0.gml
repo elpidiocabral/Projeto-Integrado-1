@@ -1,14 +1,14 @@
-
 speed = 2
 hspeed = speed
 vspeed = 0
 
+orig_xscale = image_xscale
 
 arrayTipoProblemas = ["soma", "subtracao"]
 equacao = ""
 TipoEquacao = ""
 
-switch(arrayTipoProblemas[random(10)%2]){
+switch(arrayTipoProblemas[choose(0, 1)]){
 	case "soma":
 		arrayPossiveisCalculos = [
 			"5?3 = 8",
@@ -17,7 +17,7 @@ switch(arrayTipoProblemas[random(10)%2]){
 			"5?4 = 9",
 			"4?2 = 6"
 		]
-		equacao = arrayPossiveisCalculos[random(4)];
+		equacao = arrayPossiveisCalculos[choose(0,4)];
 		TipoEquacao = "soma"
 		break;
 	case "subtracao":
@@ -28,7 +28,7 @@ switch(arrayTipoProblemas[random(10)%2]){
 			"5?4 = 1",
 			"4?2 = 2"
 		]
-		equacao = arrayPossiveisCalculos[random(4)];
+		equacao = arrayPossiveisCalculos[choose(0,4)];
 		TipoEquacao = "subtracao"
 		break;
 }
