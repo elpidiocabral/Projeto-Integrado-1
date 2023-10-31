@@ -1,9 +1,11 @@
 if (global.pause)
 	{
 	speed = 0;
+	image_speed = 0;
 	exit;
 	}
 else { speed = 1.5;
+	image_speed = real_image_speed;
 	}
 
 	
