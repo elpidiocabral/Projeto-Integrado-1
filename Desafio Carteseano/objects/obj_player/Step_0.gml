@@ -111,25 +111,6 @@ switch (estado){
 		velh = 0
 		sprite_index = spr_playerSumAttack
 
-#region SOUND
-	delay_emitter = audio_emitter_create();
-	delay_bus = audio_bus_create();
-
-	audio_emitter_bus(delay_emitter, delay_bus);
-	var _delay_effect = audio_effect_create(AudioEffectType.Delay);
-	_delay_effect.feedback = 0.55;
-	_delay_effect.time = 0.1;
-	_delay_effect.mix = 0.7;
-	delay_bus.effects[0] = _delay_effect;
-
-
-	//show_message(image_index)
-	if (image_index <= 0.25)
-		audio_play_sound_on(delay_emitter, snd_punch, 0, 1);
-		
-		
-#endregion 
-
 		if (image_index >= image_number - 1)
 			estado = "parado"
 		break;
@@ -137,25 +118,6 @@ switch (estado){
 	case "Ataque de subtracao":
 		velh = 0
 		sprite_index = spr_playerSubAttack
-
-#region SOUND
-	delay_emitter = audio_emitter_create();
-	delay_bus = audio_bus_create();
-
-	audio_emitter_bus(delay_emitter, delay_bus);
-	var _delay_effect = audio_effect_create(AudioEffectType.Delay);
-	_delay_effect.feedback = 0.55;
-	_delay_effect.time = 0.1;
-	_delay_effect.mix = 0.7;
-	delay_bus.effects[0] = _delay_effect;
-
-
-	//show_message(image_index)
-	if (image_index <= 0.25)
-		audio_play_sound_on(delay_emitter, snd_punch, 0, 1);
-		
-		
-#endregion 
 
 		if (image_index >= image_number - 1)
 			estado = "parado"
