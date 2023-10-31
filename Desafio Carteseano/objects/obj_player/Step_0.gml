@@ -62,7 +62,7 @@ switch (estado){
 		sprite_index = spr_playerIdle;
 		image_index = 0
 		
-		if ((right || left) && !parede)
+		if (abs((right - left)) != 0 && !parede)
 			estado = "movendo"
 			// && (!place_meeting(x + velh, y, obj_solidTransparent) || !place_meeting(x - velh, y, obj_solidTransparent))
 		else if (jump && chao){

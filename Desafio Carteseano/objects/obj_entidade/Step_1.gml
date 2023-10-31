@@ -1,6 +1,9 @@
 if (global.pause) exit;
 
-if (velh != 0) image_xscale = sign(velh) * orig_xscale
+if (velh == 0) image_xscale = orig_xscale;
+else if (velh != 0){
+	 image_xscale = sign(velh) * orig_xscale
+}
 
 if (position_meeting(mouse_x, mouse_y, id)) 
 	if (mouse_check_button_released(mb_left))
