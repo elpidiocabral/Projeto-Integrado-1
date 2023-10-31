@@ -1,3 +1,4 @@
+
 draw_self()
 draw_sprite_stretched(spr_textbox, 0, x - string_width(equacao)/2 - 20, y - 100, string_width(equacao) + 40, string_height(equacao)*3)
 draw_set_font(fnt_monocraft)

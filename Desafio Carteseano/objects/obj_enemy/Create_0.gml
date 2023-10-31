@@ -1,7 +1,7 @@
-speed = 2
+speed = 1.5
 hspeed = speed
 vspeed = 0
-
+real_image_speed = image_speed;
 orig_xscale = image_xscale
 
 arrayTipoProblemas = ["soma", "subtracao"]

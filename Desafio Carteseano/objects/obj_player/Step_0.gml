@@ -1,3 +1,10 @@
+if(global.pause){
+	image_speed = 0;
+	exit;
+}
+else{
+	image_speed = real_image_speed
+} 
 var right, left, jump;
 var sumAttack, subAttack, multAttack, divAttack;
 var chao = place_meeting(x, y+1, obj_solidTransparent);
