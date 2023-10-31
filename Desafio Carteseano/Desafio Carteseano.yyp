@@ -42,9 +42,10 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.1.102",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
+    {"id":{"name":"rm_tela_inicial","path":"rooms/rm_tela_inicial/rm_tela_inicial.yy",},},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},},
     {"id":{"name":"obj_qButton","path":"objects/obj_qButton/obj_qButton.yy",},},
     {"id":{"name":"spr_solidTransparent","path":"sprites/spr_solidTransparent/spr_solidTransparent.yy",},},
@@ -53,7 +54,9 @@
     {"id":{"name":"spr_playerSumAttack","path":"sprites/spr_playerSumAttack/spr_playerSumAttack.yy",},},
     {"id":{"name":"obj_HealthBar","path":"objects/obj_HealthBar/obj_HealthBar.yy",},},
     {"id":{"name":"spr_mapBackground","path":"sprites/spr_mapBackground/spr_mapBackground.yy",},},
+    {"id":{"name":"obj_solidTransparentVertical","path":"objects/obj_solidTransparentVertical/obj_solidTransparentVertical.yy",},},
     {"id":{"name":"spr_playerIdle","path":"sprites/spr_playerIdle/spr_playerIdle.yy",},},
+    {"id":{"name":"spr_enemy_hit","path":"sprites/spr_enemy_hit/spr_enemy_hit.yy",},},
     {"id":{"name":"obj_musica","path":"objects/obj_musica/obj_musica.yy",},},
     {"id":{"name":"spr_playerSubAttack","path":"sprites/spr_playerSubAttack/spr_playerSubAttack.yy",},},
     {"id":{"name":"spr_qButton","path":"sprites/spr_qButton/spr_qButton.yy",},},
@@ -87,6 +90,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"rm01","path":"rooms/rm01/rm01.yy",},},
+    {"roomId":{"name":"rm_tela_inicial","path":"rooms/rm_tela_inicial/rm_tela_inicial.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
