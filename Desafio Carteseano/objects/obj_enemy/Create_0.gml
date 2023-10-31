@@ -1,4 +1,4 @@
-speed = 2
+speed = 1.5
 hspeed = speed
 vspeed = 0
 

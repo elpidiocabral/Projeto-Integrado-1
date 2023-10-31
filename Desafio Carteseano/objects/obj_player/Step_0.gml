@@ -1,3 +1,5 @@
+if(global.pause)
+	exit;
 var right, left, jump;
 var sumAttack, subAttack, multAttack, divAttack;
 var chao = place_meeting(x, y+1, obj_solidTransparent);

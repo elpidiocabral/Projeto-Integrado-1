@@ -1,3 +1,12 @@
+if (global.pause)
+	{
+	speed = 0;
+	exit;
+	}
+else { speed = 1.5;
+	}
+
+	
 hspeed = -speed
 
 y = obj_solidTransparent.y - obj_solidTransparent.sprite_height
