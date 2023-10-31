@@ -51,6 +51,7 @@
     {"id":{"name":"spr_solidTransparent","path":"sprites/spr_solidTransparent/spr_solidTransparent.yy",},},
     {"id":{"name":"obj_wButton","path":"objects/obj_wButton/obj_wButton.yy",},},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},
+    {"id":{"name":"obj_terraingenerator","path":"objects/obj_terraingenerator/obj_terraingenerator.yy",},},
     {"id":{"name":"obj_entidade","path":"objects/obj_entidade/obj_entidade.yy",},},
     {"id":{"name":"spr_playerSumAttack","path":"sprites/spr_playerSumAttack/spr_playerSumAttack.yy",},},
     {"id":{"name":"obj_HealthBar","path":"objects/obj_HealthBar/obj_HealthBar.yy",},},
