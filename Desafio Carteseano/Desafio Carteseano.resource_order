@@ -45,6 +45,7 @@
     {"name":"spr_playerJump","order":1,"path":"sprites/spr_playerJump/spr_playerJump.yy",},
     {"name":"obj_Weapon","order":4,"path":"objects/obj_Weapon/obj_Weapon.yy",},
     {"name":"spr_wButton","order":2,"path":"sprites/spr_wButton/spr_wButton.yy",},
+    {"name":"obj_criador","order":4,"path":"objects/obj_criador/obj_criador.yy",},
     {"name":"spr_backgroundTiles","order":1,"path":"sprites/spr_backgroundTiles/spr_backgroundTiles.yy",},
     {"name":"obj_multWeapon","order":1,"path":"objects/obj_multWeapon/obj_multWeapon.yy",},
     {"name":"obj_sumWeapon","order":3,"path":"objects/obj_sumWeapon/obj_sumWeapon.yy",},
