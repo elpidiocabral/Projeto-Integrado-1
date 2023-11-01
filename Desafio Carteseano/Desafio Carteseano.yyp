@@ -42,7 +42,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.1.102",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"rm_tela_inicial","path":"rooms/rm_tela_inicial/rm_tela_inicial.yy",},},
@@ -78,6 +78,7 @@
     {"id":{"name":"snd_music1","path":"sounds/snd_music1/snd_music1.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_Black","path":"sprites/spr_Black/spr_Black.yy",},},
+    {"id":{"name":"obj_criador","path":"objects/obj_criador/obj_criador.yy",},},
     {"id":{"name":"obj_solidTransparent","path":"objects/obj_solidTransparent/obj_solidTransparent.yy",},},
     {"id":{"name":"spr_plus_equipment","path":"sprites/spr_plus_equipment/spr_plus_equipment.yy",},},
     {"id":{"name":"spr_backgroundTiles","path":"sprites/spr_backgroundTiles/spr_backgroundTiles.yy",},},
