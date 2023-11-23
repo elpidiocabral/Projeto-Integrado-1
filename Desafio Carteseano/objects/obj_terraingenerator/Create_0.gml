@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-distance =4096/2;
-
+distance =2048;
+background_pos = layer_get_id("Floor");
 
