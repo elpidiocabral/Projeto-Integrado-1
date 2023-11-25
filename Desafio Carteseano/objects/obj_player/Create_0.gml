@@ -12,3 +12,5 @@ view_visible[0] = true;
 
 max_velh = 8;
 max_velv = 12;
+
+real_image_speed = image_speed;

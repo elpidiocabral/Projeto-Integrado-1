@@ -7,4 +7,4 @@ if (estado == "Ataque de soma"){
 	draw_set_valign(fa_middle)
 	draw_set_halign(fa_center)
 	draw_text_ext_color(x,y - 70, text, string_height(text), string_width(text) - 0.2*string_width(text), c_black, c_black, c_black, c_black, 255)
-}
+} 

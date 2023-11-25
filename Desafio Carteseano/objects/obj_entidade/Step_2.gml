@@ -1,3 +1,6 @@
+if (global.pause)
+	exit;
+	
 var _velv = sign (velv)
 var _velh = sign (velh)
 

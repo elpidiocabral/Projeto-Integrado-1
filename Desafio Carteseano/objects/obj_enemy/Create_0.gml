@@ -1,6 +1,9 @@
-speed = 2
+speed = 1.5
 hspeed = speed
 vspeed = 0
+real_image_speed = image_speed;
+obj_enemy.image_yscale = 3
+obj_enemy.image_xscale = 3
 
 orig_xscale = image_xscale
 
