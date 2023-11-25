@@ -61,6 +61,7 @@
     {"id":{"name":"spr_menuRanking","path":"sprites/spr_menuRanking/spr_menuRanking.yy",},},
     {"id":{"name":"spr_mapBackground","path":"sprites/spr_mapBackground/spr_mapBackground.yy",},},
     {"id":{"name":"obj_solidTransparentVertical","path":"objects/obj_solidTransparentVertical/obj_solidTransparentVertical.yy",},},
+    {"id":{"name":"spr_menuButton_hover","path":"sprites/spr_menuButton_hover/spr_menuButton_hover.yy",},},
     {"id":{"name":"spr_playerIdle","path":"sprites/spr_playerIdle/spr_playerIdle.yy",},},
     {"id":{"name":"spr_enemy_hit","path":"sprites/spr_enemy_hit/spr_enemy_hit.yy",},},
     {"id":{"name":"obj_musica","path":"objects/obj_musica/obj_musica.yy",},},

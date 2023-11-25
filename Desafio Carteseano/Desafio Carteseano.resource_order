@@ -41,6 +41,7 @@
     {"name":"spr_menuRanking","order":1,"path":"sprites/spr_menuRanking/spr_menuRanking.yy",},
     {"name":"spr_mapBackground","order":3,"path":"sprites/spr_mapBackground/spr_mapBackground.yy",},
     {"name":"obj_solidTransparentVertical","order":3,"path":"objects/obj_solidTransparentVertical/obj_solidTransparentVertical.yy",},
+    {"name":"spr_menuButton_hover","order":5,"path":"sprites/spr_menuButton_hover/spr_menuButton_hover.yy",},
     {"name":"spr_enemy_hit","order":1,"path":"sprites/spr_enemy_hit/spr_enemy_hit.yy",},
     {"name":"obj_musica","order":2,"path":"objects/obj_musica/obj_musica.yy",},
     {"name":"spr_qButton","order":3,"path":"sprites/spr_qButton/spr_qButton.yy",},

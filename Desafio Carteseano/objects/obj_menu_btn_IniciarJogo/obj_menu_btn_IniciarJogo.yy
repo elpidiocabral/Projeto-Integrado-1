@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_menuButton_pressed",
-    "path": "sprites/spr_menuButton_pressed/spr_menuButton_pressed.yy",
+    "name": "spr_menuButton_hover",
+    "path": "sprites/spr_menuButton_hover/spr_menuButton_hover.yy",
   },
   "spriteMaskId": null,
   "visible": true,
