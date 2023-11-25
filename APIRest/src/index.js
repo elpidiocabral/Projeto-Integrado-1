@@ -109,4 +109,54 @@ app.delete("/assunto/:id", async (req, res) => {
   }
 })
 
+// ================== CRUD PROBLEMA ===================
+// ROTA SELECIONA PROBLEMAS
+app.get('/problema', async (req, res) => {
+  try {
+    const asw = await db.selectProblemas();
+    return res.status(200).send(asw);
+  } catch {err} {
+    return res.status(400).send(err);
+  }
+})
+
+// ROTA PROBLEMA BY ID
+app.get('/problema/:id', async (req, res) => {
+  try {
+    const asw =  await db.selectProblema(req.params.id);
+    return res.status(200).send(asw);
+  } catch(err) {
+    return res.status(400).send(err);
+  }
+})
+
+// ROTA INSERT PROBLEMA
+app.post('/problema', async (req, res) => {
+  try {
+    await db.insertProblema(req.body);
+    return res.sendStatus(200);
+  } catch(err) {
+    return res.status(400).send(err);
+  }
+})
+
+// ROTA UPDATE PROBLEMA
+app.patch("/problema/:id", async (req, res) => {
+  try {
+    await db.updateProblema(req.params.id, req.body);
+    return res.sendStatus(200);
+  } catch(err) {
+    return res.status(400).send(err);
+  }
+})
+
+// ROTA DELETE PROBLEMA
+app.delete("/problema/:id", async (req, res) => {
+  try {
+    await db.deleteProblema(req.params.id);
+    return res.sendStatus(204);
+  } catch(err) {
+    return res.status(400).send(err);
+  }
+})
 
