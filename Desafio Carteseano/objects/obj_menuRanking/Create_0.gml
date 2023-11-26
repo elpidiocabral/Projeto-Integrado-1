@@ -1,3 +1,5 @@
+event_inherited();
+
 //criar a conexão de dados aqui em cima..
 
 // Definir o tamanho da matriz
