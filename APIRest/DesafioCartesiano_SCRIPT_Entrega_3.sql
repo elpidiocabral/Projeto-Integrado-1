@@ -34,7 +34,7 @@ CREATE TABLE Desafio (
     pontuacao INT,
 	nivel INT,
     id_desafio SERIAL PRIMARY KEY,
-    id_assunto, 
+    id_assunto INT, 
 	FOREIGN KEY(id_assunto) 
 	REFERENCES Assunto(id_assunto)
     ON DELETE CASCADE
