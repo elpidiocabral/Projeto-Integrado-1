@@ -32,9 +32,9 @@ CREATE TABLE Desafio (
     problema VARCHAR(50) UNIQUE,
     solucao INT,
     pontuacao INT,
-	nivel INT UNIQUE,
+	nivel INT,
     id_desafio SERIAL PRIMARY KEY,
-    id_assunto SERIAL, 
+    id_assunto INT, 
 	FOREIGN KEY(id_assunto) 
 	REFERENCES Assunto(id_assunto)
     ON DELETE CASCADE
