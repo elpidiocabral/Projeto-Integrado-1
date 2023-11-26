@@ -6,8 +6,7 @@ mouse_hover = (
 	
 if mouse_hover && image_index < image_number{ // Se o mouse tiver em cima e não chegamos a ultima imagem.
 	clicked = mouse_check_button(mb_left)
-	if !isExitButton 
-		sprite_index = spr_menuButton_hover
+	sprite_index = nextsprite
 	image_speed = 1
 } else if mouse_hover{
 	image_speed = 0

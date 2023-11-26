@@ -1,10 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_menu_btn_Jogador",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_menu_btn_jogador_image",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -31,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_menuButton_Player",
-    "path": "sprites/spr_menuButton_Player/spr_menuButton_Player.yy",
+    "name": "spr_menu_icon",
+    "path": "sprites/spr_menu_icon/spr_menu_icon.yy",
   },
   "spriteMaskId": null,
   "visible": true,
