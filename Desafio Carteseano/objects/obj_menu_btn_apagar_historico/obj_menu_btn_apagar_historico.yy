@@ -1,12 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_menuRanking",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":62,"eventType":7,"isDnD":false,},
-  ],
+  "name": "obj_menu_btn_apagar_historico",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -30,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_menuRanking",
-    "path": "sprites/spr_menuRanking/spr_menuRanking.yy",
+    "name": "spr_menuButton_x",
+    "path": "sprites/spr_menuButton_x/spr_menuButton_x.yy",
   },
   "spriteMaskId": null,
   "visible": true,
