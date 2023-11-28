@@ -7,31 +7,15 @@ obj_enemy.image_xscale = 3
 
 orig_xscale = image_xscale
 
-arrayTipoProblemas = ["soma", "subtracao"]
+
+problemas =  obj_enemy_db.problemas[obj_game.nivel - 1]; //pegando as questões daquele nível.
+
 equacao = ""
 TipoEquacao = ""
 
-switch(arrayTipoProblemas[choose(0, 1)]){
-	case "soma":
-		arrayPossiveisCalculos = [
-			"5?3 = 8",
-			"3?2 = 5",
-			"6?2 = 8",
-			"5?4 = 9",
-			"4?2 = 6"
-		]
-		equacao = arrayPossiveisCalculos[choose(0,4)];
-		TipoEquacao = "soma"
-		break;
-	case "subtracao":
-		arrayPossiveisCalculos = [
-			"5?3 = 2",
-			"3?2 = 1",
-			"6?2 = 4",
-			"5?4 = 1",
-			"4?2 = 2"
-		]
-		equacao = arrayPossiveisCalculos[choose(0,4)];
-		TipoEquacao = "subtracao"
-		break;
-}
+show_debug_message(problemas)
+
+equacaoData = problemas[random_range(0,array_length(problemas) - 1)] //escolha um problema do vetor.
+TipoEquacao = equacaoData[3] == 1 ? "soma" : "subtracao"
+equacao = string_concat(equacaoData[0], " ? ", equacaoData[1], " = ", equacaoData[4])
+
