@@ -1,6 +1,8 @@
 var json = async_load[? "result"]
 
-show_message(json)
+if json = ""
+	exit;
+
 var map = json_parse(json) // o vetor de map guarda o vetor do JSON.
 quant_tuplas = array_length(map)
 
@@ -24,11 +26,12 @@ for (i = 0; i < quant_tuplas; i++){
 		partidas[i][k++%5] = struct_get(map[i], "pontuacao_final")
 		partidas[i][k++%5] = struct_get(map[i], "id_partida")
 	}
-
-	historico[i] = instance_create_layer(x + 190, y + 39 - (sprite_height)/2 + i * 23, "x_buttons", obj_menu_btn_apagar_historico)
-	historico[i].image_xscale = 0.030
-	historico[i].image_yscale = 0.030
 	
+	if (obj_jogador_ativo.nickname != "desconhecido") {
+		historico[i] = instance_create_layer(x + 190, y + 55 - (sprite_height)/2 + i * 23, "x_buttons", obj_menu_btn_apagar_historico)
+		historico[i].image_xscale = 0.030
+		historico[i].image_yscale = 0.030
+	}
 }
 
 atual = 0

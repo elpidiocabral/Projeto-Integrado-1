@@ -22,6 +22,7 @@
     {"name":"inst_BE1E8DF","path":"rooms/rm_Jogo/rm_Jogo.yy",},
     {"name":"inst_556ECB99","path":"rooms/rm_Jogo/rm_Jogo.yy",},
     {"name":"inst_75F9D355","path":"rooms/rm_Jogo/rm_Jogo.yy",},
+    {"name":"inst_4B567A6","path":"rooms/rm_Jogo/rm_Jogo.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -56,6 +57,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_AD66FAA","colour":16777215,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_solidTransparent","path":"objects/obj_solidTransparent/obj_solidTransparent.yy",},"properties":[],"rotation":0.0,"scaleX":5000.0,"scaleY":1.5,"x":1920.0,"y":736.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A2B2750","colour":16777215,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_solidTransparentVertical","path":"objects/obj_solidTransparentVertical/obj_solidTransparentVertical.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":10.5,"x":64.0,"y":336.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_75F9D355","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_terraingenerator","path":"objects/obj_terraingenerator/obj_terraingenerator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":320.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4B567A6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_db","path":"objects/obj_enemy_db/obj_enemy_db.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":384.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Floor","depth":200,"effectEnabled":true,"effectType":"_filter_tintfilter","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_TintCol","type":1,"value":"#FFE5E5E5",},
