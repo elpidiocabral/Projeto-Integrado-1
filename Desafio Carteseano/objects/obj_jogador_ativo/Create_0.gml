@@ -1,1 +1,1 @@
-nickname = "desconhecido"
+nickname = "NumberNinja"

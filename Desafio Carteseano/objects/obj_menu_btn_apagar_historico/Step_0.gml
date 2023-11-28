@@ -6,11 +6,9 @@ mouse_hover = (
 
 
 if mouse_hover && mouse_check_button(mb_left) {
-	show_message(partida_botao[0])
-	
-	//show_message(struct_get(id_botao, "nickname"))
-	
-	
-	
+	show_message(partida_botao[4])
 	instance_destroy(id)
 }
+
+if index >= obj_menuRanking.quant_tuplas 
+	instance_destroy(id)
