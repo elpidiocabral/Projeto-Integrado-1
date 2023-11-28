@@ -13,18 +13,18 @@ var paredeDireita = place_meeting(x+1, y, obj_solidTransparentVertical)
 var parede = paredeEsquerda || paredeDireita
 
 right = keyboard_check(vk_right);
-left = keyboard_check(vk_left);
+//left = keyboard_check(vk_left);
 jump = keyboard_check(vk_up);
 sumAttack = keyboard_check(ord("Q"))
 subAttack = keyboard_check(ord("W"))
 
 if (!parede)
-	velh = (right - left) * max_velh;
+	velh = (right) * max_velh;
 else {
-	if (place_meeting(x+((right - left) * max_velh), y, obj_solidTransparentVertical)){
+	if (place_meeting(x+((right) * max_velh), y, obj_solidTransparentVertical)){
 		velh = 0;
 	} else 
-		velh = (right - left) * max_velh
+		velh = (right) * max_velh
 }
 
 
@@ -62,7 +62,7 @@ switch (estado){
 		sprite_index = spr_playerIdle;
 		image_index = 0
 		
-		if (abs((right - left)) != 0 && !parede)
+		if (abs((right)) != 0 && !parede)
 			estado = "movendo"
 			// && (!place_meeting(x + velh, y, obj_solidTransparent) || !place_meeting(x - velh, y, obj_solidTransparent))
 		else if (jump && chao){

@@ -14,6 +14,7 @@
     {"name":"inst_DF3AE5B","path":"rooms/rm_tela_inicial/rm_tela_inicial.yy",},
     {"name":"inst_33883DC0","path":"rooms/rm_tela_inicial/rm_tela_inicial.yy",},
     {"name":"inst_1CF8B8D4","path":"rooms/rm_tela_inicial/rm_tela_inicial.yy",},
+    {"name":"inst_7410D457","path":"rooms/rm_tela_inicial/rm_tela_inicial.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -26,6 +27,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_DF3AE5B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_menu_btn_Jogador","path":"objects/obj_menu_btn_Jogador/obj_menu_btn_Jogador.yy",},"properties":[],"rotation":0.0,"scaleX":2.3333333,"scaleY":2.3333333,"x":360.0,"y":183.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_33883DC0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_menu_btn_Sair","path":"objects/obj_menu_btn_Sair/obj_menu_btn_Sair.yy",},"properties":[],"rotation":0.0,"scaleX":2.34375,"scaleY":2.0875,"x":306.0,"y":440.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1CF8B8D4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_menu_btn_jogador_image","path":"objects/obj_menu_btn_jogador_image/obj_menu_btn_jogador_image.yy",},"properties":[],"rotation":0.0,"scaleX":0.13,"scaleY":0.14,"x":383.0,"y":204.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7410D457","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_jogador_ativo","path":"objects/obj_jogador_ativo/obj_jogador_ativo.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":32.0,},
       ],"layers":[
         {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_1","depth":200,"effectEnabled":true,"effectType":"_filter_clouds","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
             {"name":"g_CloudScale","type":0,"value":"113",},
