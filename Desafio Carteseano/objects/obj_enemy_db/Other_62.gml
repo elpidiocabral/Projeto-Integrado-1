@@ -1,6 +1,13 @@
 var json = async_load[? "result"]
 
-var map = json_parse(json)
+
+try {
+	var map = json_parse(json)
+} catch (e){
+	room_restart()
+	show_debug_message("Não foi possível carregar o JSON: " + requisicao)
+}
+
 
 array_resize(problemas, array_length(map))
 
