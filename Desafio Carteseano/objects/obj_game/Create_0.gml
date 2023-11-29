@@ -10,3 +10,4 @@ sky_speed =  layer_get_hspeed(sky_layer);
 
 exec_time = 0
 spawn_boss = false;
+nivel = 1

@@ -54,6 +54,7 @@
     {"name":"spr_menuButton_x","order":9,"path":"sprites/spr_menuButton_x/spr_menuButton_x.yy",},
     {"name":"obj_button","order":3,"path":"objects/obj_button/obj_button.yy",},
     {"name":"obj_menu_btn_Melhorias","order":4,"path":"objects/obj_menu_btn_Melhorias/obj_menu_btn_Melhorias.yy",},
+    {"name":"obj_enemy_db","order":10,"path":"objects/obj_enemy_db/obj_enemy_db.yy",},
     {"name":"obj_subWeapon","order":2,"path":"objects/obj_subWeapon/obj_subWeapon.yy",},
     {"name":"fnt_monocraft_8","order":1,"path":"fonts/fnt_monocraft_8/fnt_monocraft_8.yy",},
     {"name":"spr_score_counter","order":1,"path":"sprites/spr_score_counter/spr_score_counter.yy",},
