@@ -7,10 +7,7 @@ else if (dialogo == dialogo_1){
 	dialogo = dialogo_2
 }
 else if (dialogo == dialogo_2){
-	dialogo = "";
+	dialogo = equacao[0];
 	exit;
 }
 alarm[0] = 150;
-
-
-

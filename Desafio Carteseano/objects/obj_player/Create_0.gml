@@ -1,5 +1,6 @@
 event_inherited();
 
+
 vida_max = 4;
 vida_atual = vida_max;
 
