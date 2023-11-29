@@ -7,15 +7,8 @@ dialogo_2 = "Te destruirei com meu problema hahahaha";
 alarm[0] = 100
 #endregion
 x = 1500;
-
-
-//Unable to find instance for object index 16
-// at gml_Object_obj_boss_Create_0 (line 11) - problemas =  obj_enemy_db.problemas[obj_game.nivel - 1]; //pegando as questões daquele nível.
-show_message(obj_enemy_db.problemas)
-problemas   = obj_enemy_db.problemas[obj_game.nivel - 1]; //pegando as questões daquele nível.
-equacaoData = problemas[random_range(0,array_length(problemas) - 1)] //escolha um problema do vetor.
-
-show_message(equacaoProblema)
+equacao = obj_boss_db.problemas[random_range(0, array_length(obj_boss_db.problemas) - 1)]
+equacaoProblema = equacao[0]
 
 vida_max = 3;
 vida_atual = vida_max;
