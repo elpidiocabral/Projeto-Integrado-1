@@ -8,18 +8,20 @@ if (obj_player.estado == "Ataque de soma" && TipoEquacao == "soma"){
 	instance_destroy(id);
 
 } else {
-	instance_destroy();
 	obj_player.vida_atual--;
 	obj_HealthBar.vidasAtuais--;
 	if obj_HealthBar.vidasAtuais == 0{
+		obj_HealthBar.vidasAtuais = 4
 		if obj_jogador_ativo.nickname = "desconhecido"
 			room_goto(rm_tela_inicial)
 		else { // guardar a pontuação no banco de dados
+			room_goto(rm_tela_inicial)
 			var partida = ds_map_create()
 			ds_map_add(partida, "", obj_points.pontuacao)
-			game_end()
+			
 			//instance_destroy(obj_player)
 			
 		}
 	}
+	instance_destroy();
 }

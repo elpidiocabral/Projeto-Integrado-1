@@ -9,7 +9,7 @@ if mouse_hover && mouse_check_button(mb_left) && obj_jogador_ativo.nickname != "
 	var pkey = partida_botao[4]
 	var deletepath =  string_concat("https://cartesiano-api.vercel.app/partida/", pkey)
 	http_request(deletepath, "DELETE", 0, 0)
-	
+	room_restart()
 	instance_destroy(id)
 }
 
