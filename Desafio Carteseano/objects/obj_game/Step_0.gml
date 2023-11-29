@@ -15,3 +15,17 @@ if (keyboard_check_pressed(ord("P")))
 		}
 	}
 
+
+if (global.pause == false) exec_time += delta_time;
+if (obj_points.pontuacao * 10 + exec_time/1000000 > 300) // inimigos * 10 + delta_time / 1000000 (delta_time vem em microsegundos então isso aqui converte).
+{ 
+	spawn_boss = true;	// Se ja puder, spawna o boss
+}
+
+if (spawn_boss || keyboard_check_pressed(ord("N"))){
+	show_debug_message("Spawna o Boss");
+	room_goto(rm_boss_room);
+}
+
+
+

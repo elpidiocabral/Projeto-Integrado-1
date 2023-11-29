@@ -1,6 +1,7 @@
 var json = async_load[? "result"]
 
-show_message(json)
+
+
 var map = json_parse(json) // o vetor de map guarda o vetor do JSON.
 quant_tuplas = array_length(map)
 
