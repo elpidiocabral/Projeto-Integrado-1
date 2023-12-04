@@ -15,9 +15,18 @@ if (obj_player.estado == "Ataque de soma" && TipoEquacao == "soma"){
 		if obj_jogador_ativo.nickname = "desconhecido"
 			room_goto(rm_tela_inicial)
 		else { // guardar a pontuação no banco de dados
+			var insert = ds_map_create();
+			ds_map_add(insert, "nickname", obj_jogador_ativo.nickname);
+			ds_map_add(insert, "pontuacao", obj_points.pontuacao);
+			ds_map_add(insert, "nivel", obj_game.nivel);
+
+			var jsonNote = json_encode(insert);
+
+			var headerMap = ds_map_create();
+			ds_map_add(headerMap, "Content-Type", "application/json");
+
+			http_request("https://cartesiano-api.vercel.app/historic-partida", "POST", headerMap, jsonNote);
 			room_goto(rm_tela_inicial)
-			var partida = ds_map_create()
-			ds_map_add(partida, "", obj_points.pontuacao)
 			
 			//instance_destroy(obj_player)
 			

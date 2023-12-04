@@ -1,5 +1,3 @@
-if (global.pause) exit;
-
 if (velh == 0) image_xscale = orig_xscale;
 else if (velh != 0){
 	 image_xscale = sign(velh) * orig_xscale

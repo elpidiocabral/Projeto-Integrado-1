@@ -10,6 +10,8 @@ x = 1500;
 equacao = obj_boss_db.problemas[random_range(0, array_length(obj_boss_db.problemas) - 1)]
 equacaoProblema = equacao[0]
 
+resultado = 0
+
 vida_max = 3;
 vida_atual = vida_max;
 
@@ -25,6 +27,6 @@ speed = 0;
 
 real_image_speed = image_speed;
 
-question_timer = 30; // Tempo pra responder a questão
+question_timer = 200; // Tempo pra responder a questão
 
 global.pause = true;

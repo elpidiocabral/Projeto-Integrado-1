@@ -11,4 +11,10 @@ else{
 	speed = 0;
 	sprite_index = spr_bossIdle;
 }
+
+if resultado == equacaoProblema[1] {
+	obj_game.nivel++;
+	obj_points.pontuacao += equacaoProblema[2]
+	room_goto(rm_Jogo)
+}
 x+=speed;
