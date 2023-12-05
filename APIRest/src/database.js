@@ -7,6 +7,9 @@ async function connect(){
   const pool = new Pool({
     connectionString: process.env.POSTGRES_URL + "?sslmode=require",
   })
+  // const pool = new Pool({
+  //   connectionString: process.env.POSTGRES_URL,
+  // })
 
   global.connection = pool;
   return pool.connect();
@@ -17,7 +20,7 @@ connect();
 // ====================== CRUD JOGADOR ========================================
 async function selectJogadores(){
   const client = await connect();
-  const res = await client.query('SELECT * FROM Jogador;');
+  const res = await client.query('SELECT * FROM get_all_jogadores;');
   return res.rows;
 }
 
@@ -59,7 +62,7 @@ async function deleteJogador(nickname){
 // ============================ CRUD ASSUNTO ==============================
 async function selectAssuntos(){
   const client = await connect();
-  const res = await client.query('SELECT * FROM Assunto;');
+  const res = await client.query('SELECT * FROM get_all_assunto;');
   return res.rows;
 }
 
@@ -100,7 +103,7 @@ async function deleteAssunto(id){
 // ======================= CRUD PROBLEMA ============================
 async function selectProblemas(){
   const client = await connect();
-  const res = await client.query('SELECT * FROM Problema;');
+  const res = await client.query('SELECT * FROM get_all_problemas;');
   return res.rows;
 }
 
@@ -141,7 +144,7 @@ async function deleteProblema(id){
 // ======================= CRUD DESAFIO ============================
 async function selectDesafios(){
   const client = await connect();
-  const res = await client.query('SELECT * FROM Desafio;');
+  const res = await client.query('SELECT * FROM get_all_desafios;');
   return res.rows;
 }
 
@@ -182,7 +185,7 @@ async function deleteDesafio(id){
 // ======================= CRUD PARTIDA ============================
 async function selectPartidas(){
   const client = await connect();
-  const res = await client.query('SELECT * FROM Partida;');
+  const res = await client.query('SELECT * FROM get_all_partidas;');
   return res.rows;
 }
 
@@ -223,7 +226,7 @@ async function deletePartida(id){
 // ======================= CRUD ARMAS ============================
 async function selectArmas(){
   const client = await connect();
-  const res = await client.query('SELECT * FROM Armas;');
+  const res = await client.query('SELECT * FROM get_all_armas;');
   return res.rows;
 }
 
@@ -282,7 +285,7 @@ async function insertArmaJogador(nickname, arma){
 // ======================= CRUD SKIN =============================
 async function selectSkins(){
   const client = await connect();
-  const res = await client.query('SELECT * FROM Skins;');
+  const res = await client.query('SELECT * FROM get_all_skins;');
   return res.rows;
 }
 
@@ -341,7 +344,7 @@ async function insertSkinJogador(nickname, skin){
 // ======================= CRUD HISTORICO =============================
 async function selectHistoricos(){
   const client = await connect();
-  const res = await client.query('SELECT * FROM Historico;');
+  const res = await client.query('SELECT * FROM get_all_historico;');
   return res.rows;
 }
 
@@ -377,6 +380,119 @@ async function deleteHistorico(id){
   const sql = `DELETE FROM Historico WHERE id_historico=$1;`
   const values = [id];
   await client.query(sql, values);
+}
+
+// ======================= HISTORICO-JOGADOR =================================
+async function selectHistoricoJogador(nickname){
+  const client = await connect();
+  const sql = `
+    SELECT H.id_jogador, P.*
+    FROM Partida P
+    JOIN Historico H ON H.id_partida = P.id_partida
+    WHERE H.id_jogador ~* $1;
+  `
+  const values = [nickname];
+  const res = await client.query(sql, values);
+  return res.rows;
+}
+
+// ======================= CREATE HISTORICO && PARTIDA =======================
+async function insertHistoricPartida(body){
+  const client = await connect();
+  const sql = `
+    CALL criar_partida_e_historico($1, $2, $3);
+  `
+  const values = [body.nickname, body.pontuacao, body.nivel];
+  await client.query(sql, values);
+}
+
+// =========================== PESQUISAS ======================================
+async function filterJogador(name){
+  const client = await connect();
+  const sql = `
+    SELECT * FROM Jogador j
+    WHERE j.nickname ~* $1;
+  `;
+  const values = [name];
+  const res = await client.query(sql, values);
+  return res.rows;
+}
+
+async function filterAssunto(name){
+  const client = await connect();
+  const sql = `
+    SELECT * FROM Assunto a
+    WHERE a.nome ~* $1;
+  `;
+  const values = [name];
+  const res = await client.query(sql, values);
+  return res.rows;
+}
+
+async function filterProblema(nivel){
+  const client = await connect();
+  const sql = `
+    SELECT * FROM Problema p
+    WHERE p.nivel = $1;
+  `;
+  const values = [nivel];
+  const res = await client.query(sql, values);
+  return res.rows;
+}
+
+async function filterDesafio(nivel){
+  const client = await connect();
+  const sql = `
+    SELECT * FROM Desafio d
+    WHERE d.nivel = $1;
+  `;
+  const values = [nivel];
+  const res = await client.query(sql, values);
+  return res.rows;
+}
+
+async function filterPartida(nivel){
+  const client = await connect();
+  const sql = `
+    SELECT * FROM Partida p
+    WHERE p.nivel = $1;
+  `;
+  const values = [nivel];
+  const res = await client.query(sql, values);
+  return res.rows;
+}
+
+async function filterArmas(nome){
+  const client = await connect();
+  const sql = `
+    SELECT * FROM Armas a
+    WHERE a.nome ~* $1;
+  `;
+  const values = [nome];
+  const res = await client.query(sql, values);
+  return res.rows;
+}
+
+async function filterSkins(nome){
+  const client = await connect();
+  const sql = `
+    SELECT * FROM Skins s
+    WHERE s.nome ~* $1;
+  `;
+  const values = [nome];
+  const res = await client.query(sql, values);
+  return res.rows;
+}
+
+async function filterHistorico(nome){
+  const client = await connect();
+  const sql = `
+    SELECT * FROM Historico h
+    WHERE h.id_jogador ~* $1;
+  `;
+  const values = [nome];
+  const res = await client.query(sql, values);
+  return res.rows;
 }
 
 module.exports = {
@@ -423,5 +539,15 @@ module.exports = {
   selectHistorico,
   insertHistorico,
   updateHistorico,
-  deleteHistorico
+  deleteHistorico,
+  selectHistoricoJogador,
+  insertHistoricPartida,
+  filterJogador,
+  filterAssunto,
+  filterProblema,
+  filterDesafio,
+  filterPartida,
+  filterArmas,
+  filterSkins,
+  filterHistorico
 }
