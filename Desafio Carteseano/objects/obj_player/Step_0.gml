@@ -1,10 +1,4 @@
-if(global.pause){
-	image_speed = 0;
-	exit;
-}
-else{
-	image_speed = real_image_speed
-} 
+
 var right, left, jump;
 var sumAttack, subAttack, multAttack, divAttack;
 var chao = place_meeting(x, y+1, obj_solidTransparent);
@@ -13,23 +7,23 @@ var paredeDireita = place_meeting(x+1, y, obj_solidTransparentVertical)
 var parede = paredeEsquerda || paredeDireita
 
 right = keyboard_check(vk_right);
-//left = keyboard_check(vk_left);
+left = keyboard_check(vk_left);
 jump = keyboard_check(vk_up);
 sumAttack = keyboard_check(ord("Q"))
 subAttack = keyboard_check(ord("W"))
 
 if (!parede)
-	velh = (right) * max_velh;
+	velh = (right - left) * max_velh;
 else {
-	if (place_meeting(x+((right) * max_velh), y, obj_solidTransparentVertical)){
+	if (place_meeting(x+((right - left) * max_velh), y, obj_solidTransparentVertical)){
 		velh = 0;
 	} else 
-		velh = (right) * max_velh
+		velh = (right - left) * max_velh
 }
 
 
-var effect_blur = layer_get_fx("zoomBlur")
-fx_set_parameter(effect_blur, "g_ZoomBlurCenter", [x/4096, y/768])
+//var effect_blur = layer_get_fx("zoomBlur")
+//fx_set_parameter(effect_blur, "g_ZoomBlurCenter", [x/4096, y/768])
 
 
 //var _dwidth = display_get_width();
@@ -37,7 +31,7 @@ fx_set_parameter(effect_blur, "g_ZoomBlurCenter", [x/4096, y/768])
 //var _xpos = (_dwidth / 2) - 480;
 //var _ypos = (_dheight / 2) - 400;
 //window_set_rectangle(_xpos, _ypos, 1024, 760);
-view_camera[0] = camera_create_view(x - 150, 0, 1024, 720, 0, obj_player, 4, 1, 0, 100)
+view_camera[0] = camera_create_view(x - 150, 0, 1366, 768, 0, obj_player, 4, 1, 0, 100)
 
 
 
@@ -62,7 +56,7 @@ switch (estado){
 		sprite_index = spr_playerIdle;
 		image_index = 0
 		
-		if (abs((right)) != 0 && !parede)
+		if (abs((right - left)) != 0 && !parede)
 			estado = "movendo"
 			// && (!place_meeting(x + velh, y, obj_solidTransparent) || !place_meeting(x - velh, y, obj_solidTransparent))
 		else if (jump && chao){

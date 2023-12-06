@@ -15,3 +15,11 @@ if (keyboard_check_pressed(ord("P")))
 		}
 	}
 
+
+if (keyboard_check_pressed(ord("N"))){
+	show_debug_message("Spawna o Boss");
+	room_goto(rm_boss_room);
+}
+
+
+
