@@ -1,2 +1,2 @@
 event_inherited();
-btn_string = "Melhorias"
+btn_string = "Banco de dados"

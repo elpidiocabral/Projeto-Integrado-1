@@ -1,10 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_menu_btn_apagar_historico_Historico",
+  "name": "obj_menu_btn_Filtrar",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":62,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
@@ -13,7 +14,10 @@
     "name": "Menu",
     "path": "folders/Objects/Menu.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_button",
+    "path": "objects/obj_button/obj_button.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_menuButton_x",
-    "path": "sprites/spr_menuButton_x/spr_menuButton_x.yy",
+    "name": "spr_menuButton_hover",
+    "path": "sprites/spr_menuButton_hover/spr_menuButton_hover.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -5,6 +5,7 @@ notLoadeds = []
 deleteButtons = []
 createButtons = []
 alterButtons = []
+filterButtons = []
 tableNames = [
 	[// Titulos
 		"Historico",
@@ -48,6 +49,12 @@ tableNames = [
 	]
 ]
 
+function requestHTTP(){
+	for (var i = 0; i < 8; i ++){
+		get = http_request(string_concat(basepath, tableNames[1][i]), "GET", 0, 0)
+	}
+}
+
 vetor_menus = array_create(8)
 for (var i = 0; i < 8; i ++){
 	#region background.
@@ -64,6 +71,11 @@ for (var i = 0; i < 8; i ++){
 		createButtons[i].table = i
 		
 		// alterar
-		instance_create_layer(i * 520 + 450, 140, "buttons", obj_menu_btn_DBAlter)
+		alterButtons[i] = instance_create_layer(i * 520 + 450, 140, "buttons", obj_menu_btn_DBAlter)
+		alterButtons[i].table = i
+		
+		//filtrar
+		filterButtons[i] = instance_create_layer(i * 520 + 450, 180, "buttons", obj_menu_btn_Filtrar)
+		filterButtons[i].table = i
 	#endregion
 }

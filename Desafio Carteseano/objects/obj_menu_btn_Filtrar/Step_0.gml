@@ -2,6 +2,8 @@ event_inherited()
 data = bd.urlDatas[table]
 if (mouse_hover && mouse_check_button_pressed(mb_left)){
 	//show_debug_message(typeof(bd.urlDatas[7]))
+	
+	#region Preenchendo banco de dados do objeto
 	insert = ds_map_create(); 
 	var bdDatas = []
 	for (var i = 0; i < array_length(bd.urlDatas); i++){
@@ -10,6 +12,7 @@ if (mouse_hover && mouse_check_button_pressed(mb_left)){
 		bdDatas[i] = json_parse(bd.urlDatas[i])
 	}
 	
+
 	if (data == "")
 		exit
 	var structKeys = []
@@ -19,6 +22,29 @@ if (mouse_hover && mouse_check_button_pressed(mb_left)){
 		var structKeys = struct_get_names(temporaryArray[0])
 	}
 	array_sort(structKeys, true)
+	
+	#endregion
+	#region Pegando ID para alterar
+		var myId = get_string("Qual o id que deseja alterar?", "")
+	
+		myData = []
+		var idSearch = false
+		for ( var i = 0; i< array_length(bdDatas[table]); i++) {
+		    if myId == struct_get(bdDatas[table][i], string_concat("id_", string_lower(bd.tableNames[0][table]))){
+				idSearch = true
+				myData = bdDatas[table][i]
+				break;
+			}
+		}
+	
+		if (!idSearch){
+			show_message("Id não existente")
+			exit
+		}
+		
+		
+	
+	#endregion
 	
 	switch (table){ // vamos apagar casas qeu não vamos usar.
 		case 0: //Tabela de histórico.
@@ -48,6 +74,8 @@ if (mouse_hover && mouse_check_button_pressed(mb_left)){
 	var values = []
 	var i = 0
 	
+
+	
 	for (; i < array_length(structKeys); i++){
 		//show_message("Recarregando..")
 		
@@ -73,12 +101,12 @@ if (mouse_hover && mouse_check_button_pressed(mb_left)){
 						}
 					} else if  (i == 1) { //Vamos verificar se já tem algum id com aquele mesmo ID de partida.
 						for (var k = 0; k < array_length(temporaryArray); k++){
-							if (values[i] == int64(struct_get(temporaryArray[k], structKeys[i]))){
+							if (values[i] == int64(struct_get(temporaryArray[k], structKeys[i])) && struct_get(myData, "id_partida") != int64(values[i])){
 								values[i] = ""
 								i--
 								show_message("Já existe partida atrelada a esse id_partida.")
 								exit;
-							} else if (!(values[i] == struct_get(bdDatas[3][k], "id_partida")) && k == array_length(temporaryArray) - 1){
+							} else if (!(values[i] == struct_get(bdDatas[3][k], "id_partida")) && k == array_length(temporaryArray) - 1) && struct_get(myData, "id_partida") != int64(values[i]){
 								show_message("Não existe id_partida com esse numero")
 								values[i] = ""
 								i--
@@ -195,22 +223,15 @@ if (mouse_hover && mouse_check_button_pressed(mb_left)){
 		ds_map_add(insert, structKeys[i], values[i]);
 	}
 	var jsonNote = json_encode(insert);
-	show_debug_message(jsonNote)
-	show_debug_message(string_concat("https://cartesiano-api.vercel.app/", string_lower(bd.tableNames[0][table])))
 	if (jsonNote = "{}"){
 		insert = ds_map_create()
 		exit
 	}
 	
-	#region Inserindo botão de deletar.
-		//array_resize(obj_banco_dados.deleteButtons[table], array_length(obj_banco_dados.deleteButtons[table])+1)
-		//obj_banco_dados.deleteButtons[table][array_length(obj_banco_dados.deleteButtons[table]) - 1]  = instance_create_layer(table * 520 + 320, bd.vetor_menus[table][0].y + array_length(obj_banco_dados.deleteButtons[table]) * 15.3 + 20, "x_buttons", obj_menu_btn_apagar_historico_Historico)
-		//obj_banco_dados.deleteButtons[table][array_length(obj_banco_dados.deleteButtons[table]) - 1]  .image_xscale = 0.025
-		//obj_banco_dados.deleteButtons[table][array_length(obj_banco_dados.deleteButtons[table]) - 1]  .image_yscale = 0.025
-	#endregion
-	
 	var headerMap = ds_map_create();
 	ds_map_add(headerMap, "Content-Type", "application/json");
-	http_request(string_concat("https://cartesiano-api.vercel.app", string_lower(bd.tableNames[1][table])), "POST", headerMap, jsonNote);
+	//show_debug_message(string_concat("https://cartesiano-api.vercel.app", string_lower(bd.tableNames[1][table]), "/", myId))
+	//show_debug_message(jsonNote)
+	http_request(string_concat("https://cartesiano-api.vercel.app/filter/", string_lower(bd.tableNames[1][table]), "/", myId), "PATCH", headerMap, jsonNote);
 	
 }

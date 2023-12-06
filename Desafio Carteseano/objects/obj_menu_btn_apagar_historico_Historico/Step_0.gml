@@ -14,7 +14,7 @@ if !Readed{
 		}
 	}
 	Readed = true
-	data = obj_banco_dados.tableNames[3][i] // Detenho todas os ids da tabela i
+	data = obj_banco_dados.tableNames[3][i%8] // Detenho todas os ids da tabela i
 } // ler aonde é minha tabela e minha linha. (Eu objeto)
 
 mouse_hover = (
@@ -46,7 +46,8 @@ if mouse_hover && mouse_check_button_pressed(mb_left){
 	}
 	
 #endregion 
-	//http_request(toDeletePath, "DELETE", 0, 0)
+	show_message(toDeletePath)
+	http_request(toDeletePath, "DELETE", 0, 0)
 	//array_delete(obj_banco_dados.urlDatas[], i, 1)
 	array_delete(temporaryArray, myLine, 1) // apaga a linha escrita
 	obj_banco_dados.urlDatas[myTable] = json_stringify(temporaryArray)

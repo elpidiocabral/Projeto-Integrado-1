@@ -13,9 +13,10 @@ for (var i = 0; i < 8; i++){
 var toX = vetor_menus[toStorage][0].x
 var toY = vetor_menus[toStorage][0].y
 
-if (async_load[? "http_status"] == 200){
+if (async_load[? "http_status"] == 200 && r_str != "Ok" && r_str != "OK"){
 	urlDatas[toStorage] = r_str
 	//			  Tabela,     Linha
+	
 	data = json_parse(urlDatas[toStorage])
 	for (var i = 0; i < array_length(data) && i < 13; i++){
 		// Naquela tabela, naquela linha, crie esse botão de delete.

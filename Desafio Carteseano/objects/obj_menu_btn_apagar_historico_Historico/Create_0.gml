@@ -4,3 +4,4 @@ Readed = false
 myY = 0
 myX = 0
 data = []
+toDeletePath = ""
