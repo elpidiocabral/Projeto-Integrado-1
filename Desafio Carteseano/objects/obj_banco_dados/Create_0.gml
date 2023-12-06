@@ -3,6 +3,8 @@ ki = 0
 urlDatas = ["","","","","","","",""]
 notLoadeds = []
 deleteButtons = []
+createButtons = []
+alterButtons = []
 tableNames = [
 	[// Titulos
 		"Historico",
@@ -48,9 +50,20 @@ tableNames = [
 
 vetor_menus = array_create(8)
 for (var i = 0; i < 8; i ++){
-	instance_create_layer(i * 520 + 79, 32, "Data_modals", obj_menuModal) // capa
-	vetor_menus[i][0] = instance_create_layer(i * 520 + 90, 90, "Instances_2", obj_bd_list)
-	vetor_menus[i][0].image_xscale = 0.60
-	vetor_menus[i][0].image_yscale = 0.40
-	get = http_request(string_concat(basepath, tableNames[1][i]), "GET", 0, 0)
+	#region background.
+		instance_create_layer(i * 520 + 79, 32, "Data_modals", obj_menuModal) // capa
+		vetor_menus[i][0] = instance_create_layer(i * 520 + 90, 90, "Instances_2", obj_bd_list)
+		vetor_menus[i][0].image_xscale = 0.60
+		vetor_menus[i][0].image_yscale = 0.40
+		get = http_request(string_concat(basepath, tableNames[1][i]), "GET", 0, 0)
+	#endregion
+	
+	#region botões
+		// criar
+		createButtons[i] = instance_create_layer(i * 520 + 450, 100, "buttons", obj_menu_btn_DBCreate)
+		createButtons[i].table = i
+		
+		// alterar
+		instance_create_layer(i * 520 + 450, 140, "buttons", obj_menu_btn_DBAlter)
+	#endregion
 }

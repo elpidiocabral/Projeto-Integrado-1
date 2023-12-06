@@ -11,7 +11,7 @@ massa = 2;
 view_enabled = true
 view_visible[0] = true;
 
-max_velh = 20;
+max_velh = 10;
 max_velv = 12;
 
 real_image_speed = image_speed;
